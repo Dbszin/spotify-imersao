@@ -168,7 +168,6 @@ body {
     border-radius: 20px;
 }
 
-
 .disclaimer-premium {
     position: fixed;
     bottom: 0;
@@ -178,19 +177,24 @@ body {
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
-}
-.disclaimer-premium .text {
-   flex-shrink: 0;
-}
-.disclaimer-premium .disclaimer-premium__title {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 12px;
-    margin-bottom: 10px;
+    align-items: center;
+    margin: 10px;
 }
 
-.disclaimer-premium .disclaimer-premium__subtitle {
+.disclaimer-premium .text {
+    display: flex;
+    flex-direction: column; /* Mantém o texto em linhas separadas */
+}
+
+.disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px; /* Aumenta um pouco o tamanho do título */
+    margin-bottom: 5px; /* Ajusta o espaço entre as linhas */
+}
+
+.disclaimer-premium__subtitle {
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
@@ -202,7 +206,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     padding: 14px 30px;
-    border: 0px;
+    border: 0;
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
